@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: dynamicrendering
+    container_name: dynamicrendering
+    restart: always
+    ports:
+      - 80:80
+    working_dir: /rendertron
+    command: [sh, -c, npm run start]

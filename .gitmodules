@@ -1,0 +1,3 @@
+[submodule "rendertron"]
+  path = rendertron
+  url = git@github.com:torico-tokyo/rendertron.git
